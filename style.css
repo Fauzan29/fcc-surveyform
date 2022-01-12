@@ -1,0 +1,94 @@
+body {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-serif;
+}
+
+.main {
+  background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-size: 24px;
+  overflow: auto;
+}
+
+.main:after {
+  content: ' ';
+  background-color: rgb(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main > h1,
+.main > p {
+  text-align: center;
+  font-size: 35px;
+  z-index: 2;
+  position: relative;
+}
+
+.main-content {
+  background-color: rgb(27, 27, 50, 0.9);
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  z-index: 3;
+  position: relative;
+  color: #fff;
+  box-shadow: 0px -1px 10px 5px green;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#dropdown-fav,
+#comment {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+#comment {
+  min-height: 180px;
+  width: 100%;
+}
+
+label[for='comment'] {
+  margin-top: 30px;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #37af65;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+#submit:hover {
+  background-color: pink;
+  color: black;
+}
